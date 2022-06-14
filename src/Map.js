@@ -1,7 +1,7 @@
 import "./App.css";
 import { Component } from "react";
-import { PostCard } from "./components/PostCard";
 import { fetchPostsAndPhotos } from "./utils/loadPosts";
+import { Posts } from "./components/Posts";
 
 class Map extends Component {
   state = {
@@ -18,9 +18,11 @@ class Map extends Component {
   };
   render() {
     const { posts } = this.state;
-    return <section className="container">
-      
-    </section>;
+    return (
+      <section className="container">
+        <Posts posts={posts} />
+      </section>
+    );
   }
 }
 
