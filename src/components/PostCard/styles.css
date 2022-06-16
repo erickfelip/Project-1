@@ -1,0 +1,20 @@
+.post {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    transition: transform 200ms ease-in-out;
+  }
+  
+  .post img {
+    max-width: 100%;
+  }
+  
+  .post:hover {
+    transform: scale(1.05);
+  }
+  
+  .post-content {
+    padding: 20px;
+  }
+  
