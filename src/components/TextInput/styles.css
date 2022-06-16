@@ -1,0 +1,28 @@
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+  }
+  
+  .search-input {
+    display: flex;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  input:focus::placeholder {
+    color: transparent;
+    transition-duration: 0.5s;
+    outline: none;
+  }
+  
+  textarea:focus,
+  input:focus {
+    outline: none;
+  }
+  
