@@ -4,6 +4,7 @@ import { fetchPostsAndPhotos } from "../../utils/loadPosts";
 import { Posts } from "../../components/Posts";
 import { Button } from "../../components/Button";
 import { TextInput } from "../../components/TextInput";
+import { ScrollButton } from "../../components/ScrollButton";
 
 export const Home = () => {
   const [posts, setPosts] = useState([]);
@@ -52,11 +53,14 @@ export const Home = () => {
       )}
       <div className="button-container">
         {!searchValues && (
-          <Button
-            disabled={noMorePosts}
-            text="More posts"
-            onClick={loadMorePosts}
-          />
+          <>
+            <Button
+              disabled={noMorePosts}
+              text="More posts"
+              onClick={loadMorePosts}
+            />
+            <ScrollButton />
+          </>
         )}
       </div>
     </section>
